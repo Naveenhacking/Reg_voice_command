@@ -100,7 +100,7 @@
         const user = JSON.parse(localStorage.getItem(username));
         if (user && user.password === password) {
             showSuccessMessage('Login successful!', true); // Redirect after login
-            speakText('Login successful!');
+            speakText('Login successful please wait bro you will be redirect !');
         } else {
             showCustomAlert('Invalid username or password.');
         }
@@ -113,7 +113,7 @@
             const user = { username, password };
             localStorage.setItem(username, JSON.stringify(user));
             showSuccessMessage('Registration successful!', false); // No redirect after registration
-            speakText('Registration successful!');
+            speakText('Registration successful please you can login directly!');
         }
     }
 
